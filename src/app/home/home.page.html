@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+
+  <ion-item>
+    <ion-label>Notifications</ion-label>
+    <ion-select (ionChange)="event($event)" value="notifications" interface="action-sheet">
+      <ion-select-option value="enable">Enable</ion-select-option>
+      <ion-select-option value="disable">Disable</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>
